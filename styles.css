@@ -6,6 +6,8 @@ body {
   margin: 0; background: var(--paper); color: var(--ink);
   font-family: var(--font-sans); -webkit-font-smoothing: antialiased;
   line-height: 1.5;
+  overflow-x: hidden;            /* no sideways scroll on small screens */
+  overflow-wrap: break-word;     /* long words/emails wrap instead of overflowing */
 }
 a { color: inherit; }
 img, svg { display: block; }
@@ -78,6 +80,8 @@ section.block { padding: var(--section-y) 0; border-top: 1px solid var(--line-so
 .contact h2 { font-size: clamp(32px, 5vw, 56px); font-weight: 600; letter-spacing: -0.02em; margin: 14px 0 0; }
 .contact h2 a { color: var(--cherry); text-decoration: none; border-bottom: 2px solid transparent; transition: border-color .15s; }
 .contact h2 a:hover { border-color: var(--cherry); }
+/* email sized to fit the viewport and break cleanly if it ever can't */
+.contact h2 .email { display: inline-block; max-width: 100%; margin-top: 8px; font-size: clamp(20px, 4.6vw, 40px); letter-spacing: -0.01em; overflow-wrap: anywhere; }
 .contact .meta { margin-top: 26px; font-family: var(--font-mono); font-size: 14px; color: var(--muted); display: flex; gap: 26px; justify-content: center; flex-wrap: wrap; }
 .contact .meta a { color: var(--ink); text-decoration: none; }
 
@@ -92,5 +96,14 @@ footer.site { border-top: 1px solid var(--line-soft); padding: 48px 0; }
   .nav-links a:not(.btn) { display: none; }
   .services, .steps, .about-grid { grid-template-columns: 1fr; }
   .about-grid { gap: 30px; }
-  :root { --section-y: 84px; }
+  :root { --section-y: 84px; --gutter: 24px; }
+  .hero { padding: 96px 0 84px; }
+}
+
+@media (max-width: 480px) {
+  :root { --gutter: 18px; }
+  .hero h1 { font-size: clamp(32px, 9vw, 44px); }
+  .svc { padding: 26px; }
+  .contact .meta { gap: 8px 18px; }
+  .foot { justify-content: center; text-align: center; }
 }
