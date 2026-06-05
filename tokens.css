@@ -1,0 +1,26 @@
+/* Kirschbaum brand tokens — drop-in CSS custom properties */
+:root {
+  /* color */
+  --cherry:        #9B2D3B;
+  --cherry-deep:   #7C2230;
+  --ink:           #261D1A;
+  --paper:         #FBFAF6;
+  --paper-2:       #F2EDE4;
+  --muted:         #8A7E76;
+  --line:          rgba(38, 29, 26, 0.12);
+  --line-soft:     rgba(38, 29, 26, 0.07);
+
+  /* type */
+  --font-sans: 'Schibsted Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* shape */
+  --radius:    14px;
+  --radius-sm: 8px;
+  --shadow:    0 20px 50px -18px rgba(38, 29, 26, 0.40);
+  --shadow-sm: 0 2px 6px rgba(38, 29, 26, 0.10);
+
+  /* spacing rhythm */
+  --gutter: 40px;
+  --section-y: 120px;
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="6 9 88 88" width="64" height="64" role="img" aria-label="Kirschbaum">
+  <g fill="none" stroke="#9B2D3B" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="50" y1="80" x2="50" y2="51"></line>
+    <line x1="50" y1="52" x2="28" y2="36"></line>
+    <line x1="50" y1="52" x2="72" y2="36"></line>
+    <line x1="50" y1="52" x2="50" y2="26"></line>
+  </g>
+  <g fill="#9B2D3B">
+    <circle cx="50" cy="82" r="5.5"></circle>
+    <circle cx="28" cy="34" r="6"></circle>
+    <circle cx="50" cy="24" r="6.2"></circle>
+    <circle cx="72" cy="34" r="6"></circle>
+  </g>
+</svg>
